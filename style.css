@@ -2,45 +2,129 @@ body {
   margin: 0;
 }
 
-.left-img-container {
-  height: 100vh;
-  width: 40vw;
-}
-
-.logo-container {
-  background: rgba(0, 0, 0, 0.66);
-  position: absolute;
+.container {
   display: flex;
-  justify-content: center;
-  height: 100px;
-  width: 40vw;
-  top: 25vh;
+  height: 100vh;
+  width: 100vw;
 }
 
-.headline {
-  color: white;
-  font-family: "Quicksand", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 300;
+/* Left Side - Hero Image */
+
+.left-container {
+  height: 100%;
+  width: 40%;
+  position: relative;
 }
 
-img {
+.hero-img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.img-credit {
+.logo-container {
   position: absolute;
-  bottom: 1vh;
-  color: white;
+  z-index: 1;
+  top: 20%;
+  height: 120px;
+  width: 100%;
+  background-color: rgb(39, 27, 18, 0.75);
+}
+
+.headline {
+  color: #d4cfc3;
   font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  padding: 30px 0px;
+  font-size: 3rem;
   text-align: center;
-  width: 40vw;
-  font-size: 0.9rem;
   margin: 0;
 }
 
+.img-credit {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 98%;
+  text-align: right;
+  color: #d4cfc3;
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.75rem;
+}
+
 a {
-  color: white;
+  color: #d4cfc3;
+}
+
+/* Right Side - Form */
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  background-color: #d4cfc3;
+  height: 100%;
+  width: 60%;
+  font-family: "Quicksand", sans-serif;
+}
+
+.right-container h2 {
+  font-weight: 400;
+}
+
+span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.form-container {
+  background-color: #e1ddd5;
+  box-shadow: 0px 5px 5px #aaa69c;
+  padding: 1.5rem 0rem 2rem 0rem;
+}
+
+.form-headline {
+  padding-bottom: 1.5rem;
+}
+
+.info-headline,
+.form-headline,
+.form,
+.register-btn,
+.login {
+  margin: 0rem 2.5rem;
+}
+
+.form {
+  display: grid;
+  width: 70%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.form label {
+  font-size: 0.8rem;
+}
+
+.form input {
+  width: 80%;
+  height: 1.25rem;
+}
+
+.register-btn {
+  background-color: #5e7157;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.15rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #d4cfc3;
+}
+
+.login-link {
+  color: #5e7157;
+  font-weight: bold;
+  text-decoration: none;
 }
